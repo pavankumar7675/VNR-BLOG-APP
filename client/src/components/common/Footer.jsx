@@ -24,7 +24,7 @@ function Footer() {
             <p style={{ 
               color: '#EAEAEA',
               fontFamily: 'monospace'
-            }}>© 2024 QuickBlog. All rights reserved.</p>
+            }}>© 2025 QuickBlog. All rights reserved.</p>
           </div>
         </div>
       </div>
