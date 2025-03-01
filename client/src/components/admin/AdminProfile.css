@@ -1,0 +1,213 @@
+.admin-dashboard {
+    background-color: #1A1A1A;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .admin-header {
+    margin-bottom: 2rem;
+  }
+  
+  .admin-title {
+    color: #EAEAEA;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .admin-nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    background: #2a2a2a;
+    color: #EAEAEA;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #333;
+  }
+  
+  .nav-link:hover {
+    background: #333;
+    transform: translateY(-2px);
+  }
+  
+  .nav-link-active {
+    background: #FF3131;
+    color: #EAEAEA;
+    border-color: #FF3131;
+  }
+  
+  .nav-link-active:hover {
+    background: #ff4545;
+  }
+  
+  .admin-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  
+  @media (max-width: 640px) {
+    .admin-dashboard {
+      padding: 1rem 0.5rem;
+    }
+    
+    .admin-nav {
+      flex-direction: column;
+    }
+    
+    .nav-link {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  .admin-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #2A2A2A;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 255, 127, 0.2);
+  }
+  
+  .admin-table th {
+    background-color: #1A1A1A;
+    color: #00FF7F;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 1rem;
+    font-size: 0.85rem;
+    border-bottom: 1px solid rgba(0, 255, 127, 0.2);
+  }
+  
+  .admin-table td {
+    padding: 1rem;
+    color: #EAEAEA;
+    border-bottom: 1px solid rgba(0, 255, 127, 0.1);
+  }
+  
+  .admin-table tr:hover {
+    background-color: rgba(0, 255, 127, 0.05);
+  }
+  
+  .admin-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* Add smooth transitions */
+  .admin-table tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Add responsive styles */
+  @media (max-width: 768px) {
+    .admin-table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+  
+  .status-badge {
+    display: inline-flex;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .status-active {
+    background: rgba(34, 197, 94, 0.1);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+  }
+  
+  .status-blocked {
+    background: rgba(255, 49, 49, 0.1);
+    color: #FF3131;
+    border: 1px solid rgba(255, 49, 49, 0.2);
+  }
+  
+  /* .action-button {
+    background: #FF3131;
+    color: #EAEAEA;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .action-button:hover {
+    background: #ff4545;
+    transform: translateY(-1px);
+  }  */
+  
+  .read-more {
+    color: #FF3131;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .read-more:hover {
+    color: #272424;
+  }
+  .read-more-2 {
+      color: #42b400;
+      font-weight: 600;
+      transition: color 0.3s ease;
+      border-radius: 2rem;
+    }
+    
+    .read-more-2:hover {
+      color: #292727;
+      background-color: #22c55e;
+    }
+    
+  .block-button {
+    background: rgba(255, 49, 49, 0.1);
+    color: #FF3131;
+    border: 1px solid rgba(255, 49, 49, 0.2);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .block-button:hover {
+    background: rgba(255, 49, 49, 0.2);
+  }
+  
+  .unblock-button {
+    background: rgba(34, 197, 94, 0.1);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .unblock-button:hover {
+    background: rgba(34, 197, 94, 0.2);
+  }
+    

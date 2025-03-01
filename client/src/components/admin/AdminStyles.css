@@ -1,0 +1,102 @@
+/* Table Styles */
+.admin-table-container {
+  background-color: var(--bg-primary);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.admin-table {
+  width: 100%;
+  background-color: var(--bg-secondary);
+  border: 1px solid rgba(0, 255, 127, 0.2);
+}
+
+.admin-table th {
+  background-color: var(--bg-primary);
+  color: var(--accent-primary);
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.85rem;
+}
+
+.admin-table tr:hover {
+  background-color: rgba(0, 255, 127, 0.05);
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge-role {
+  background-color: rgba(0, 255, 127, 0.1);
+  color: var(--accent-primary);
+  border: 1px solid rgba(0, 255, 127, 0.2);
+}
+
+.status-badge-active {
+  background-color: rgba(0, 255, 127, 0.1);
+  color: var(--accent-primary);
+  border: 1px solid rgba(0, 255, 127, 0.2);
+}
+
+.status-badge-blocked {
+  background-color: rgba(255, 64, 129, 0.1);
+  color: var(--accent-secondary);
+  border: 1px solid rgba(255, 64, 129, 0.2);
+}
+
+/* Action Buttons */
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.action-btn-block {
+  background-color: rgba(255, 64, 129, 0.1);
+  color: var(--accent-secondary);
+  border: 1px solid rgba(255, 64, 129, 0.2);
+}
+
+.action-btn-unblock {
+  background-color: rgba(0, 255, 127, 0.1);
+  color: var(--accent-primary);
+  border: 1px solid rgba(0, 255, 127, 0.2);
+}
+
+.action-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.action-btn-block:hover {
+  background-color: rgba(255, 64, 129, 0.2);
+}
+
+.action-btn-unblock:hover {
+  background-color: rgba(0, 255, 127, 0.2);
+}
+
+/* User Info */
+.user-email {
+  font-size: 0.85rem;
+  color: rgba(234, 234, 234, 0.6);
+} 

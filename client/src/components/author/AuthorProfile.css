@@ -1,0 +1,47 @@
+.add-article-btn {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--accent-primary);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.add-article-btn:hover {
+  background-color: var(--accent-primary);
+  color: var(--bg-primary) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.add-article-btn.active {
+  background-color: var(--accent-primary) !important;
+  color: var(--bg-primary) !important;
+}
+
+.nav-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--accent-primary);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button-active {
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+}
+
+/* Ensure text stays white when button is both active and hovered */
+.nav-button-active:hover {
+  color: var(--bg-primary);
+}
